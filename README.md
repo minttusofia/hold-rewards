@@ -1,14 +1,14 @@
-# HOLD (Human Offline Learned Distances) Reward Models
+# HOLD Reward Models
 
 Official implementation of the following paper:  
 
-Learning Reward Functions for Robotic Manipulation by Observing Humans  
-Minttu Alakuijala, Gabriel Dulac-Arnold, Julien Mairal, Jean Ponce, Cordelia Schmid  
-ICRA 2023
-<p align="center"><a href="https://arxiv.org/abs/2211.09019">Paper</a> | <a href="https://sites.google.com/view/hold-rewards">Project website</a></p>
+<p align="center"><b>Learning Reward Functions for Robotic Manipulation by Observing Humans</b><br>
+Minttu Alakuijala, Gabriel Dulac-Arnold, Julien Mairal, Jean Ponce, Cordelia Schmid<br>
+ICRA 2023<br>
+<a href="https://arxiv.org/abs/2211.09019">[Paper]</a> | <a href="https://sites.google.com/view/hold-rewards">[Project website]</a></p>
 
 This repository includes the training of HOLD models (a.k.a functional distance models) on video data.
-The implementation is based on [Scenic](https://github.com/google-research/scenic).
+This implementation is based on [Scenic](https://github.com/google-research/scenic).
 
 For the RL policy training experiments in the paper, see [https://github.com/minttusofia/hold-policies](https://github.com/minttusofia/hold-policies).
   
@@ -28,7 +28,9 @@ For a GPU-enabled installation of jax (recommended), see [https://github.com/goo
 
 ## Training HOLD on Something-Something v2
 
-Make the following changes to the scenic config file (in `scenic/projects/func_dist/configs/holdr/vivit_large_factorized_encoder.py` for HOLD-R) or (`scenic/projects/func_dist/configs/holdc/` for HOLD-C):
+Make the following changes to the scenic config file  
+(in `scenic/projects/func_dist/configs/holdr/vivit_large_factorized_encoder.py` for HOLD-R, or  
+`scenic/projects/func_dist/configs/holdc/resnet50.py` for HOLD-C):
 * Set `DATA_DIR` to the directory where Something-Something v2 data (and optionally, any pretrained model checkpoints) are saved.
 * Set `NUM_DEVICES` to the number of GPUs / TPUs to use.
 
