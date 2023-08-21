@@ -23,8 +23,11 @@ $ git clone https://github.com/minttusofia/hold-rewards.git
 $ cd hold-rewards
 $ pip install .
 ```
-For a GPU-enabled installation of jax (recommended), see [https://github.com/google/jax/#pip-installation-gpu-cuda-installed-via-pip-easier](https://github.com/google/jax/#pip-installation-gpu-cuda-installed-via-pip-easier).
-
+For a GPU-enabled installation of jax (recommended), see [https://github.com/google/jax/tree/jax-v0.2.28#pip-installation-gpu-cuda](https://github.com/google/jax/tree/jax-v0.2.28#pip-installation-gpu-cuda).  
+For example, to install jax for CUDA >= 11.1 and cuDNN >= 8.2, run:
+```shell
+$ pip install "jax[cuda11_cudnn82]>=0.2.21,<0.3" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+```
 
 ## Training HOLD on Something-Something v2
 
