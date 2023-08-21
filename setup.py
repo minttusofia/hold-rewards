@@ -68,21 +68,21 @@ install_requires_projects = [
 
 install_requires_core = [
     "absl-py>=1.0.0",
-    "dmvr @ git+https://github.com/deepmind/dmvr.git@adf78b7a8edd4bb56c6ce1bffaa5003019761716",
     "numpy>=1.12",
     "jax>=0.2.21,<0.3",
     "jaxlib>=0.1.74,<0.3",
     "flax>=0.4.0,<0.6",
+    "Keras-Applications==1.0.6",
+    "Keras-Preprocessing==1.0.5",
     "ml-collections>=0.1.1",
     "seaborn>=0.11.2",
-    "tensorflow<2.8,>=2.7.0",
-    "tensorflow-addons>=0.15.0",
     "immutabledict>=2.2.1",
     "clu>=0.0.6",
+    "tensorflow==1.13.1",
     "tensorflow-datasets",
-    "tfds-nightly>=4.5.2.dev,<5",
-    "tf-models-official",
-    "tensorflow-probability>=0.15,<0.16",
+    "tensorflow-estimator==1.13.0",
+    "tensorflow-gpu==1.13.1",
+    "tensorflow-probability==0.6.0",
 ]
 
 tests_require = [
